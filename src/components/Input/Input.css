@@ -1,0 +1,99 @@
+/* Set the width of the main container */
+.main {
+    width: 40%;
+}
+
+/* Style for the input field */
+.inp {
+    width: 100%;
+    padding: 0.7em 0.6em;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, sans-serif;
+}
+
+/* Style for the container displaying filtered items */
+.filter_card {
+    width: 100%;
+    margin-top: 7px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 0.5em;
+}
+
+/* Style for each filtered item */
+.filter_item {
+    margin: 0.5em;
+    padding: 0.5em;
+    display: flex;
+    gap: 0.3em;
+    align-items: center;
+    border-radius: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    cursor: pointer;
+}
+
+/* Hover effect for filtered items */
+.filter_item:hover {
+    background-color: #ccc;
+}
+
+/* Style for the avatar container */
+.avatar {
+    height: 30px;
+    width: 30px;
+}
+
+/* Style for the avatar image */
+.avatar img {
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+}
+
+/* Style for the container of selected chips */
+.chip_container {
+    display: flex;
+    gap: 0.4em;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+/* Style for each selected chip */
+.chip {
+    margin-bottom: 0.3em;
+    display: flex;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, sans-serif;
+    align-items: center;
+    gap: 0.5em;
+    padding: 0.2em;
+    border-radius: 20px;
+    width: fit-content;
+    border: 1px solid #ccc;
+}
+
+/* Style for the delete button within each chip */
+.chip button {
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    width: 20px ;
+    height: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Media query for screens with a maximum width of 900px */
+@media screen and (max-width: 900px) {
+    .main {
+        width: 80%;
+    }
+}
+
+/* Media query for screens with a maximum width of 480px */
+@media screen and (max-width: 480px) {
+    .main {
+        width: 90%;
+    }
+}
